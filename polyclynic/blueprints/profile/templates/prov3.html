@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список заказов.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #36393f; /* желаемый цвет фона, похожий на фон приложения Discord */
+            color: white; /* белый цвет текста */
+            text-align: center; /* центрируем текст */
+            margin: 0;
+            padding: 0;
+        }
+
+        input, select {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #7289da; /* желаемый цвет границы поля ввода */
+        }
+
+        input[type="submit"] {
+            background: #7289da; /* желаемый цвет фона кнопки */
+            color: white; /* белый цвет текста на кнопке */
+            cursor: pointer; /* меняем курсор при наведении на кнопку */
+        }
+
+        a {
+            color: #7289da; /* желаемый цвет текста ссылки */
+            text-decoration: none; /* убираем подчеркивание ссылки */
+        }
+
+        a:hover {
+            text-decoration: underline; /* добавляем подчеркивание при наведении на ссылку */
+        }
+    </style>
+</head>
+<body class="design2">
+    <h2 align="center" class="distant"> Поиск пациентов с данным диагнозом:</h2>
+    <form action="" method="POST" align="center" style="margin-top: 260px">
+        <label for="выбор-варианта">Выберите заболевание:</label>
+        <select id="выбор-варианта" name="diagnosis" class="input">
+            <option value="Ревматизм">Ревматизм</option>
+            <option value="Сколиоз">Сколиоз</option>
+            <option value="Сотрясение мозга">Сотрясение мозга</option>
+            <option value="Пневмония">Пневмония</option>
+            <option value="Стеноз">Стеноз</option>
+            <option value="Грыжа">Грыжа</option>
+            <option value="Гиперкифоз">Гиперкифоз</option>
+        </select>
+        <input type="submit" value="Отправить" class="input">
+    </form>
+    <div align="center" style="margin-top: 550px">
+        <a href="/">Выход в главное меню</a>
+    </div>
+</body>
+</html>

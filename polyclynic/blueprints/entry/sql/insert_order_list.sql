@@ -1,0 +1,1 @@
+insert order_list values(NULL,'$order_id', '$doc_id')

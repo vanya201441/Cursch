@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главное меню.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #36393f;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Top_menu {
+            background-color: #36393f;
+        }
+
+        .Top_menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .Top_menu li {
+            margin-right: 20px;
+        }
+
+        .Top_menu li:last-child {
+            margin-right: 0;
+        }
+
+        .Top_menu li:nth-child(2) {
+            margin-right: auto;
+        }
+
+        .Top_menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .Top_menu li a:hover {
+            background-color: #7289da;
+            text-decoration: none;
+        }
+
+        .clinic-info {
+            background: #36393f;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: black;
+        }
+    </style>
+</head>
+<body class="design">
+<header>
+    <div class="Top_menu">
+        <ul>
+            <li><a href="/exit">Выход</a></li>
+            <li><a href="/authorization/">Войти</a></li>
+            <li><a href="/reports/">Отчёты</a></li>
+            <li><a href="/entry">Записаться к врачу</a></li>
+            <li><a href="/profile/">Посмотреть Записи</a></li>
+        </ul>
+    </div>
+</header>
+<div class="clinic-info">
+    <h2>Поликлиника "Здоровье"</h2>
+    <p>Адрес: ул. Ленина, д. 10</p>
+    <p>Телефон: 8 (800) 123-45-67</p>
+    <p>Часы работы: Пн-Пт: 8:00-20:00, Сб-Вс: 9:00-15:00</p>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+{
+  "manager": [
+    "",
+    "authorization.login_page",
+    "profile.index",
+    "profile.get_sql1"
+  ],
+  "developer": [
+    "",
+    "authorization.login_page",
+    "profile.index",
+    "profile.get_sql2"
+  ],
+   "tester": [
+    "",
+    "authorization.login_page",
+    "profile.index",
+    "profile.get_sql3"
+  ],
+  "admin": [
+    "",
+    "authorization.login_page",
+    "profile.index",
+    "profile.get_sql1",
+    "profile.get_sql2",
+    "profile.get_sql3"
+  ],
+  "unauthorized": [
+    "",
+    "authorization.login_page"
+  ]
+}

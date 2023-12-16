@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат поиска</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #36393f; /* желаемый цвет фона, похожий на фон приложения Discord */
+            color: white; /* белый цвет текста */
+            text-align: center; /* центрируем текст */
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border: 1px solid #7289da; /* желаемый цвет границы таблицы */
+            border-collapse: collapse;
+            margin: auto; /* центрируем таблицу */
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center; /* центрируем текст в ячейках таблицы */
+        }
+
+        a {
+            color: #7289da; /* желаемый цвет текста ссылки */
+            text-decoration: none; /* убираем подчеркивание ссылки */
+        }
+
+        a:hover {
+            text-decoration: underline; /* добавляем подчеркивание при наведении на ссылку */
+        }
+    </style>
+</head>
+<body class="design2">
+    <h1 align="center" class="distant"> Результат поиска:</h1>
+    <table border="1" align="center">
+        {% for item in str %}
+        <tr>
+            {% for key, values in item.items() %}
+                <td>{{values}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <div align="center" style="margin-top: 150px"> <a href="/">Выход в главное меню</a> </div>
+</body>
+</html>

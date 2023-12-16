@@ -1,0 +1,1 @@
+insert orders values(NULL, '$user_date', '$user_id')

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создать отчёт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #36393f;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .form-item {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-item label {
+            font-weight: bold;
+        }
+
+        .button-search {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-search:hover {
+            background-color: #007bff;
+        }
+
+        .button-menu {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-menu:hover {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Посмотреть отчёт "{{ title }}"</h2>
+    <form action="" method="POST">
+        <div class="form-item">
+            <label for="month">Месяц</label>
+            <input type="number" name="month" min="1" max="12" id="month" required>
+        </div>
+        <div class="form-item">
+            <label for="year">Год</label>
+            <input type="number" name="year" id="year" required>
+        </div>
+        <button class="button-search" type="submit">Посмотреть отчёт</button>
+    </form>
+    <div class="buttons-menu">
+        <a href="{{ url_for('reports.reports_choice') }}">
+            <button class="button-menu"> Назад</button>
+        </a>
+        <a href="/">
+            <button class="button-menu"> На главную</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>

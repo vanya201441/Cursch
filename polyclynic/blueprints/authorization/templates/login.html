@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Войдите в аккаунт.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #36393f;
+            color: white;
+            text-align: center;
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #7289da;
+        }
+
+        input[type="submit"] {
+            background: #7289da;
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            color: #7289da;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Введите логин и пароль:</h2>
+    <form action="" method="POST">
+        <input type="text" class="input" name="login" placeholder="Введите логин">
+        <input type="password" class="input" name="password" placeholder="Введите пароль">
+        <input type="submit" class="input" value="Войти в аккаунт"> <!-- изменено значение на атрибуте value -->
+    </form>
+    <br>
+    <div><a href="/">Выход в главное меню</a></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Выберите запрос:</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="..\static\base.css">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #36393f; /* желаемый цвет фона, похожий на фон приложения Discord */
+        margin: 0;
+        padding: 0;
+    }
+
+    .design {
+        color: white; /* белый цвет текста */
+    }
+
+    .distant {
+        margin-top: 50px;
+    }
+
+    .container-fluid {
+        position: fixed;
+        top: 100px;
+    }
+
+    .card {
+        width: 30rem;
+        margin: auto;
+    }
+
+    .list-group-item {
+        margin-top: 50px;
+    }
+</style>
+
+</head>
+<body class="design">
+    <h1 class="distant" align="center">Выберите SQL-запрос:</h1>
+    <div class="container-fluid" align="center">
+        <div class="card" >
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="prov1">Показать количество пациентов поставленных на учёт</a></li>
+                <li class="list-group-item"><a href="prov2">Сведения о пациентах поставленных на учёт</a></li>
+                <li class="list-group-item"><a href="prov3">Список пациентов по диагнозам</a></li>
+            </ul>
+        </div>
+        <div style="margin-top: 430px"><a href="/">Выход в главное меню</a></div>
+    </div>
+</body>
+</html>

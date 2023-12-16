@@ -1,0 +1,1 @@
+select max(id_order) as max_id from orders where user_id = '$user_id'
